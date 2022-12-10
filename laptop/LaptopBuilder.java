@@ -32,8 +32,13 @@ public class LaptopBuilder {
         return this;
     }
 
-    public Laptop build() {
+    /*public Laptop build() {
 
+        //Laptop laptop = new Laptop(this);
+        return new Laptop(this);
+    }*/
+
+    public Laptop build() {
         return new Laptop(brand, ram, processor, screenSize, batteryCapacity);
     }
 }
