@@ -1,13 +1,13 @@
 package com.laptop;
 
 public class Laptop {
-    private String brand;
-    private int ram;
-    private String processor;
-    private double screenSize;
-    private int batteryCapacity;
+    private final String brand;
+    private final int ram;
+    private final String processor;
+    private final double screenSize;
+    private final int batteryCapacity;
 
-    public Laptop(String brand, int ram, String processor, double screenSize, int batteryCapacity) {
+    Laptop(String brand, int ram, String processor, double screenSize, int batteryCapacity) {
         this.brand = brand;
         this.ram = ram;
         this.processor = processor;
@@ -15,6 +15,14 @@ public class Laptop {
         this.batteryCapacity = batteryCapacity;
     }
 
+    /*Laptop(LaptopBuilder builder) {
+        this.brand = builder.brand;
+        this.ram = builder.ram;
+        this.processor = builder.processor;
+        this.screenSize = builder.screenSize;
+        this.batteryCapacity = builder.batteryCapacity;
+    }*/
+    
     @Override
     public String toString() {
         return "Laptop{" +
